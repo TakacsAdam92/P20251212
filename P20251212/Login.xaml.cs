@@ -17,9 +17,29 @@ namespace P20251212
     /// </summary>
     public partial class Login : Window
     {
+        const string felhasznalo = "info";
+        const string jelszo = "Premo900";
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnIn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Username.Text == felhasznalo && Password.Password == jelszo)
+            {
+                MessageBox.Show("Sikeres bejelentkezés!");
+            }
+            else
+            {
+                MessageBox.Show("Hibás felhasználónév vagy jelszó!");
+            }
+        }
+
+        private void ujUser_Click(object sender, RoutedEventArgs e)
+        {
+            ujfelhasznalo newin = new ujfelhasznalo();
+            newin.Show();
         }
     }
 }
