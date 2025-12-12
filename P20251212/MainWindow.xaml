@@ -10,15 +10,17 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        <Label Content="Felhasználó bejelentkezés" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="20" Content="Autószerviz" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Image Grid.Row="2" Grid.Column="1" Width="200" Source="C:\Users\info\source\repos\P20251212\P20251212\bin\Debug\net10.0-windows\auto.png"/>
+        <Button x:Name="btnLogin" Grid.Column="1" Grid.Row="3" Content="Belépés" Width="80" Height="60"/>
     </Grid>
 </Window>
